@@ -20,7 +20,7 @@ void UWorldPosition::BeginPlay()
 	Super::BeginPlay();
 
 	AActor* ownerActor = GetOwner();
-	FString ownerName = ownerActor->GetName();
+	FString ownerName = ownerActor->GetActorLabel();
 
 	UE_LOG(LogTemp, Warning, TEXT("Component owner is: %s"), *ownerName);
 
